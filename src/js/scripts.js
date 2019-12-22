@@ -13,9 +13,9 @@ const getTextContent = () => {
 }
 
 const setCssProps = () => {
-  title.style.fontSize = width / 35 + 'px';
+  title.style.fontSize = width / 30 + 'px';
   content.style.height = height + 'px';
-  wrapper.style.fontSize = width / 25 + 'px';
+  wrapper.style.fontSize = width / 20 + 'px';
 }
 
 const createCanvasElement = () => {

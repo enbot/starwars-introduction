@@ -10,6 +10,11 @@ html, body {
   p{
     text-align: center;
   }
+
+  *{
+    user-select: none;
+    cursor: default;
+  }
 }
 
 canvas {
@@ -78,7 +83,7 @@ canvas {
           opacity: 1;
         }
         100% {
-          top: -200%;
+          top: -175%;
           opacity: 0;
         }
       }
