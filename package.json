@@ -1,0 +1,30 @@
+{
+  "name": "starwars-introduction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "gulp build && node app.js",
+    "serve": "gulp build && gulp sync",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enbot/starwars-introduction.git"
+  },
+  "author": "Nathan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enbot/starwars-introduction/issues"
+  },
+  "homepage": "https://github.com/enbot/starwars-introduction#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-terser": "^1.2.0"
+  }
+}
