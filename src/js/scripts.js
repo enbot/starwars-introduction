@@ -9,7 +9,7 @@ const height = window.innerHeight
 
 const getTextContent = () => {
   title.innerHTML = text.title
-  wrapper.innerHTML = text.content.reduce((p, c) => p + c , '')
+  wrapper.innerHTML = text.content.reduce((p, c) => p + c, '')
 }
 
 const setCssProps = () => {
@@ -20,7 +20,7 @@ const setCssProps = () => {
 
 const createCanvasElement = () => {
 
-  const canvas = document.getElementById('snow')
+  const canvas = document.querySelector('canvas')
   const context = canvas.getContext('2d')
 
   canvas.width = width
@@ -46,18 +46,17 @@ const createCanvasElement = () => {
 
 }
 
-(() => {
+getTextContent()
+setCssProps()
+createCanvasElement()
 
-  getTextContent()
-  setCssProps()
-  createCanvasElement()
+setTimeout(() => {
+  title.className = 'title title__animation'
+  wrapper.className = 'wrapper wrapper__animation'
+  content.className = 'content'
 
-})()
+  // document.querySelector('audio').play()
 
-document.getElementById('button')
-  .addEventListener('click', () => {
-    title.className = 'title title__animation'
-    wrapper.className = 'wrapper wrapper__animation'
-    content.className = 'content'
-    document.querySelector('audio').play()
-  })
+}, 2000);
+
+
